@@ -12,7 +12,7 @@ const Navbar = () => {
       {/* Logo */}
       <div className="logo">
         <img src={logo} alt="open" />
-      </div>
+      </div>1
       <div className='list'>
         <ul>
             <li><a href="home">Home</a></li>

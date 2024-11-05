@@ -6,6 +6,7 @@ import Order from './components/Order/Order'
 import Banner from './components/banner/Banner'
 import Footer from './components/Footer/Footer'
 import Delivery from './components/Center/Delivery'
+import Customers from './components/Customers/Customers';
 
 const App = () => {
   return (
@@ -14,7 +15,8 @@ const App = () => {
 <Navbar/>
 <Banner/>
    <Order/>
-   <Delivery/>
+   {/* <Delivery/> */}
+   <Customers/>
    <Footer/>
     </div>
   )
