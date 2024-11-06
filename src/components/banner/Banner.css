@@ -1,127 +1,176 @@
-/* Banner Container */
-.banner {
-    display: flex;
-    justify-content: space-around;
-    padding: 30px 20px;
-    background-color: #f9f9f9;
-    position: relative;
-    margin-top: 100px;
-    background-color: hsl(0, 31%, 84%);
+* {
+    padding: 0;
+    margin: 0;
 }
 
-/* Banner Inner Container */
+.body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    margin-left: 300px;
+    padding: 20px;
+    gap: 40px;
+    margin-top: 200px;
+    background-color: rgb(44, 16, 44);
+
+}
+
+.banner {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 .banner-container {
     position: relative;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+
 }
 
-.banner-container .btn{
-    height: 20px;
-    width: 20px;
-    background-color: rgb(5, 156, 13);
-    border-radius: 50%;
-    padding: 10px;
-    color: white;
-   
-  
-}
-
-.btn-container .btn{
-    height: 20px;
-    width: 20px;
-    background-color: rgb(5, 156, 13);
-    border-radius: 50%;
-    padding: 10px;
-    color: white;
-}
 .banner-container img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
+    max-width: 350px;
+    max-height: 350px;
+    position: absolute;
+    right: -180px;
+    top: -100px;
+    transform: translate(50%);
+
 }
 
-/* Shop Container */
+.banner-container .btn {
+    background-color: #068035ab;
+    color: white;
+    margin-right: 50px;
+    height: 30px;
+    width: 20px;
+    border-radius: 50%;
+
+}
+
+.btn-container .btn {
+    background-color: rgb(6, 126, 52);
+    margin-left: 60px;
+    margin-top: 80px;
+    color: white;
+    height: 30px;
+    width: 20px;
+    border-radius: 50%;
+
+}
+
+
 .shop-container {
-    max-width: 500px;
     display: flex;
-    margin-left: 40px;
-    margin-top: 100px;
-    text-align: left;
+    justify-content: space-around;
+    margin-left: 400px;
+
 }
 
-/* Shop Details */
 .shop h2 {
-    font-size: 24px;
-    color: #ff6347;
+    margin-bottom: 20px;
+    color: rgba(255, 166, 0, 0.753);
 }
 
 .shop h1 {
-    font-size: 48px;
-    color: #333;
-    margin: 10px 0;
+    font-weight: bold;
+    font-size: 35px;
 }
 
 .shop p {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 20px;
+    margin-top: 15px;
+
 }
 
-/* Order Button */
 .shop button {
-    padding: 12px 26px;
-    background-color: #038014;
-    color: #fff;
+    padding: 10px 20px;
+    background-color: #49b908;
+    color: white;
+    border-radius: 15px;
     border: none;
-    border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    margin-top: 23px;
 }
 
 .shop button:hover {
-    background-color: #0dd83fb7;
-}
-
-/* Button Container */
-.btn-container {
-    position: absolute;
-    right: 20px;
-    top: 150px;
+    background-color: #38ff59;
+    font-weight: bold;
 
 }
 
-/* Navigation Buttons */
-button .btn {
-    display: flex;
-    align-items: center;
+
+
+.btn {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Payment Form Styles */
+.form-container {
+    flex: 0 0 350px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-input {
+    width: 100%;
     padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    font-size: 14px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
-button .btn:hover {
-    background-color: #555;
+.form-input:focus {
+    border-color: #ff5a5f;
+    outline: none;
 }
 
-.btn-container button {
+.error-message {
+    font-size: 12px;
+    color: red;
+    margin-top: 5px;
+}
+
+.submit-button {
+    width: 100%;
     padding: 12px;
-    background-color: #333;
-    color: #fff;
+    background-color: #ff5a5f;
+    color: white;
     border: none;
-    border-radius: 50%;
-    cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
-.btn-container .btn:hover {
-    background-color: #555;
+.submit-button:hover {
+    background-color: #ff383d;
 }
+
+/* Responsive Styles */
